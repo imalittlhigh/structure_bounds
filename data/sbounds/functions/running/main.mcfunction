@@ -38,6 +38,6 @@ execute if score %playercount.overworld sbounds.dummy matches 1.. at @s[predicat
 #if players in nether, and mobcap higher than current mobs run spawning
 execute if score %playercount.nether sbounds.dummy matches 1.. at @s[predicate=sbounds:nether] if score %mobcap.nether sbounds.dummy > %mobs.nether sbounds.dummy if score %pillagercount sbounds.dummy matches ..15 as @s[tag=sbounds.marker.nether_fortress] run function sbounds:running/nether_fortress/main
 execute if score %playercount.nether sbounds.dummy matches 1.. at @s[predicate=sbounds:nether] if score %mobcap.nether sbounds.dummy > %mobs.nether sbounds.dummy if score %guardiancount sbounds.dummy matches ..25 as @s[tag=sbounds.marker.pillager_outpost] run function sbounds:running/pillager_outpost/main
-execute if score %playercount.nether sbounds.dummy matches 1.. at @s[predicate=sbounds:nether] if score %mobcap.nether sbounds.dummy > %mobs.nether sbounds.dummy if score %netherfortressmobcount sbounds.dummy matches ..25 as @s[tag=sbounds.marker.ocean_monument] run function sbounds:running/ocean_monument/main
+execute if score %playercount.nether sbounds.dummy matches 1.. at @s[predicate=sbounds:nether] if score %mobcap.nether sbounds.dummy > %mobs.nether sbounds.dummy if score %netherfortressmobcount sbounds.dummy matches ..45 as @s[tag=sbounds.marker.ocean_monument] run function sbounds:running/ocean_monument/main
 
 tag @s remove sbounds.process
